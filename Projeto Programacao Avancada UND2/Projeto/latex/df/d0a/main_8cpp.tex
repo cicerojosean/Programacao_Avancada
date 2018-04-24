@@ -1,0 +1,38 @@
+\hypertarget{main_8cpp}{}\section{Referência ao ficheiro main.\+cpp}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}poligono.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}retangulo.\+h\char`\"{}}\newline
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação das funções}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+8 \{
+9 \mbox{\hyperlink{class_retangulo}{Retangulo}} a(0,0,4,3);
+10 a.imprimir();
+11 cout <<endl<< \textcolor{stringliteral}{" => Area::  "} << a.area() << endl << endl
+12 << \textcolor{stringliteral}{"Translada..."} << endl;
+13 a.translada(-3,4);
+14 a.imprimir();
+15 cout << endl << \textcolor{stringliteral}{" => Area::  "} << a.area() << endl << endl
+16 << \textcolor{stringliteral}{"Rotacionando..."} << endl;
+17 a.rotacao(30, -1, 1.5 );
+18 a.imprimir();
+19 cout << endl << \textcolor{stringliteral}{" => Area::  "} << a.area() << endl << endl;
+20 
+21     \textcolor{keywordflow}{return} 0;
+22 \}
+\end{DoxyCode}
